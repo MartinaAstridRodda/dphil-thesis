@@ -14,4 +14,4 @@ Contents of this repository:
 
 3) extract_obj_1.0.py: a Python 3 script which extracts all direct objects and the verbs they depend from in files from the treebanked Perseus DL corpus (https://perseusdl.github.io/treebank_data/), and prints them to a .csv file. NB this version extracts the inflected forms, not the lemmas.
 
-4) wordcount.py: a very simple Python 3 wordcounting script that can be used to covert the output of the previous scripts from word tokens to word types, while also obtaining a token frequency count.
+4) wordcount 2.0.py: a very simple Python 3 wordcounting script that can be used to covert the output of the previous scripts from word tokens to word types, while also obtaining a token frequency count.
