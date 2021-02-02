@@ -12,4 +12,4 @@ Contents of this repository:
 
 2) corpusprocess_2.0.py: a Python 3 script which extracts the collocates for each word in the Diorisis corpus, that is, the words that occur together with the target word, within a window of co-occurrence defined by the user. It produces output files that can be fed into the DISSECT tool (https://www.aclweb.org/anthology/P13-4006/).
 
-3)
+3) extract_obj_1.0.py: a Python 3 script which extracts all direct objects and the verbs they depend from in files from the treebanked Perseus DL corpus (https://perseusdl.github.io/treebank_data/), and prints them to a .csv file. NB this version extracts the inflected forms, not the lemmas.
