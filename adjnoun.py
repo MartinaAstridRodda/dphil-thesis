@@ -24,7 +24,7 @@ parser.add_argument('--threshold', '-t', default=20, type=int,
                     help='frequency threshold for pairs')
 args = parser.parse_args()
 
-# TODO: This only covers nouns and hopefully adjectives (・_・ヾ
+# TODO: This only covers nouns and hopefully adjectives
 ONE_LETTER_CODES = {
     'masc': 'M',
     'fem': 'F',
@@ -48,13 +48,12 @@ class Word(object):
         self.id = xml_entry.attrib['id']
         self.form = xml_entry.attrib['form']
 
-        # FIXME: can a word have more lemmas associated? (゜-゜)
+        # FIXME: can a word have more lemmas associated?
         lemma = xml_entry.find('lemma')
         self.pos = lemma.attrib.get('POS', None)
         self.entry = lemma.attrib.get('entry', None)
         self.morph = set()
         for analysis in lemma.findall('analysis'):
-            # ACHIEVEMENT: My first time using |= in Python! (ﾉ´ヮ´)ﾉ*:･ﾟ✧
             self.morph |= self._morph_to_set(analysis.attrib['morph'])
         try:
             # from cltk.corpus.greek.beta_to_unicode import Replacer
@@ -75,7 +74,7 @@ class Word(object):
         return morphologies
 
     def is_compatible_with(self, word):
-        # TODO: make this work for words that are not noun/adjective pairs (　ﾟдﾟ)
+        # TODO: make this work for words that are not noun/adjective pairs
         if not (
             (self.pos == 'noun' and word.pos == 'adjective') or 
             (self.pos == 'adjective' and word.pos == 'noun')):
