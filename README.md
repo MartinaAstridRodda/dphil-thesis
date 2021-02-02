@@ -10,4 +10,6 @@ Contents of this repository:
 
 1) adjnoun.py: a Python 3 script which extracts pairs of adjectives and nouns which agree with each other (same case, number, and gender) from .xml files in the Diorisis Ancient Greek corpus (https://www.doi.org/10.6084/m9.figshare.6187256). The script produces a list of pairs, each of which is followed by all occurrences of the pair, printed with a context window chosen by the user. The user can also set the maximum window of distance between the adjective and the noun.
 
-2) 
+2) corpusprocess_2.0.py: a Python 3 script which extracts the collocates for each word in the Diorisis corpus, that is, the words that occur together with the target word, within a window of co-occurrence defined by the user. It produces output files that can be fed into the DISSECT tool (https://www.aclweb.org/anthology/P13-4006/).
+
+3)
