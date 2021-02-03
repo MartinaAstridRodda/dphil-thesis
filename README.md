@@ -6,7 +6,7 @@ I am releasing the code for reasons of transparency and "peer-reviewability," an
 
 All code in this repository is my work apart from adjnoun.py, which is the work of Dr Alessandro Achille (https://alexachi.github.io/).
 
-Contents of this repository:
+Code in this repository:
 
 1) adjnoun.py: a Python 3 script which extracts pairs of adjectives and nouns which agree with each other (same case, number, and gender) from .xml files in the Diorisis Ancient Greek corpus (https://www.doi.org/10.6084/m9.figshare.6187256). The script produces a list of pairs, each of which is followed by all occurrences of the pair, printed with a context window chosen by the user. The user can also set the maximum window of distance between the adjective and the noun.
 
@@ -17,3 +17,5 @@ Contents of this repository:
 4) wordcount 2.0.py: a very simple Python 3 wordcounting script that can be used to covert the output of the previous scripts from word tokens to word types, while also obtaining a token frequency count.
 
 5) proximity_1.4_centroid.py: a Python 3 script that calculates the centroid of a set of points in a multi-dimensional space and then calculates the distance of each point from said centroid.
+
+I have also included two Excel files that contain the raw(-ish) data for my thesis (more details are provided in the thesis text). These are called syntax_dataset.xlsx and semantics_dataset.xlsx.
